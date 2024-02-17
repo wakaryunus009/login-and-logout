@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Success Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        max-width: 600px;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+        color: #007bff;
+        margin-bottom: 20px;
+      }
+      p {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      blockquote {
+        font-style: italic;
+        padding: 10px;
+        border-left: 5px solid #007bff;
+        background-color: #f9f9f9;
+        margin: 0;
+      }
+      footer {
+        text-align: right;
+        margin-top: 10px;
+      }
+      .logout-btn {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Congratulations!</h1>
+      <p>You've successfully logged in. Here's a beautiful quote for you:</p>
+      <blockquote>
+        "The only way to do great work is to love what you do."
+        <footer>- Wakar Yunus</footer>
+      </blockquote>
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+    <script>
+      function logout() {
+        // Perform logout action here, such as redirecting to the login page
+        window.location.href = "index.html";
+      }
+    </script>
+  </body>
+</html>
